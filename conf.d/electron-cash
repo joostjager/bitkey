@@ -5,9 +5,3 @@ SRC=/usr/local/src
 # unpack electrum and apply patches
 tar -zxf $SRC/Electron-Cash-*.tar.gz -C $SRC
 rm $SRC/Electron-Cash-*.tar.gz
-
-# install electrum
-cd $SRC/Electron-Cash-*
-python setup.py install
-cd -
-rm -rf $SRC/Electron-Cash-*
